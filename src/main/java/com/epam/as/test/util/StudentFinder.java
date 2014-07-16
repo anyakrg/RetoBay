@@ -36,7 +36,7 @@ public class StudentFinder {
         } catch (FileNotFoundException e) {
             log.error("FileNotFoundException cant open file /input.txt");
         } catch (IOException e) {
-            log.error("IOException:");
+            log.error("IOException:");//*-
         }
         write(list);
         return list;
