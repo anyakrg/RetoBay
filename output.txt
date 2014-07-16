@@ -1,6 +1,0 @@
-Student{name='Gugfork', id=0, groupId=2}
-Student{name='Fruzzbumb', id=1, groupId=2}
-Student{name='Muck', id=2, groupId=2}
-Student{name='Donkonk', id=3, groupId=2}
-Student{name='Dolphgook', id=4, groupId=2}
-Student{name='Guzz', id=5, groupId=2}
