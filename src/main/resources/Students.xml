@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student id="001">
+        <lastname>Emmanuel</lastname>
+        <firstname>Tommy</firstname>
+        <birthday>31/05/1955</birthday>
+        <adress>
+            <city>Qaragandy</city>
+            <street>Erubaeva</street>
+            <build>15</build>
+            <flat>45</flat>
+        </adress>
+        <email>tommy@emmanuel.com</email>
+        <groupid>IS-22</groupid>
+    </student>
+    <student id="002">
+        <lastname>notEmmanuel</lastname>
+        <firstname>notTommy</firstname>
+        <birthday>31/05/1955</birthday>
+        <adress>
+            <city>notQaragandy</city>
+            <street>notErubaeva</street>
+            <build>15</build>
+            <flat>45</flat>
+        </adress>
+        <email>nottommy@emmanuel.com</email>
+        <groupid>IS-22</groupid>
+    </student>
+    <student id="003">
+        <lastname>notEmmanuel</lastname>
+        <firstname>notTommy</firstname>
+        <birthday>31/05/1955</birthday>
+        <adress>
+            <city>notQaragandy</city>
+            <street>notErubaeva</street>
+            <build>15</build>
+            <flat>45</flat>
+        </adress>
+        <email>tommy@emmanuel.com</email>
+        <groupid>IS-22</groupid>
+    </student>
+    <student id="004">
+        <lastname>Слепенков</lastname>
+        <firstname>Алексей</firstname>
+        <birthday>26/03/1994</birthday>
+        <adress>
+            <city>Караганда</city>
+            <street>Зональная</street>
+            <build>9</build>
+            <flat>-</flat>
+        </adress>
+        <email>alexey@slepenkov.com</email>
+        <groupid>IS-12-2</groupid>
+    </student>
+</students>
