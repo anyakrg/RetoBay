@@ -39,17 +39,4 @@
         <email>tommy@emmanuel.com</email>
         <groupid>IS-22</groupid>
     </student>
-    <student id="004">
-        <lastname>Слепенков</lastname>
-        <firstname>Алексей</firstname>
-        <birthday>26/03/1994</birthday>
-        <adress>
-            <city>Караганда</city>
-            <street>Зональная</street>
-            <build>9</build>
-            <flat>-</flat>
-        </adress>
-        <email>alexey@slepenkov.com</email>
-        <groupid>IS-12-2</groupid>
-    </student>
 </students>
