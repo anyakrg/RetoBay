@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.epam.test</groupId>
-    <artifactId>test</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+    <groupId>com.epam.catharina</groupId>
+    <artifactId>Catharina</artifactId>
+    <version>0.1-DUMMY</version>
+    <packaging>war</packaging>
 
     <properties>
         <java.version>1.8</java.version>
@@ -17,10 +17,29 @@
         <maven.complier.target>1.8</maven.complier.target>
         <slf4j.version>1.7.7</slf4j.version>
         <jstl.version>1.2</jstl.version>
-        <bootstrap.version>2.0.4</bootstrap.version>
     </properties>
 
+    <build>
+        <finalName>Catharina</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
+
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -34,22 +53,20 @@
             <version>${slf4j.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>${jsp-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
-
-    <build>
-        <finalName>TextParser</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-
 
 </project>

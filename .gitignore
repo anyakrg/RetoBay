@@ -1,1 +1,8 @@
-/.idea
+#folders
+.idea/
+lib/
+libs/
+#files
+*.iml
+*.log
+*.class
