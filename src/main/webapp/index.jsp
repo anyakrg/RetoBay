@@ -3,11 +3,11 @@
 <html>
 <head>
     <title>
-        <title>Text Parser</title>
+        <title>Catharina Welcome Page</title>
         <link rel="stylesheet" href="style/style.css" type="text/css">
     </title>
 </head>
 <body>
-
+<%--page here--%>
 </body>
 </html>
