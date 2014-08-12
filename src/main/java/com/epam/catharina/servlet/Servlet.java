@@ -1,4 +1,4 @@
-package com.epam.as.textparser.servlet;
+package com.epam.catharina.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
