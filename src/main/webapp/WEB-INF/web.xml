@@ -8,7 +8,7 @@
     <display-name>Catharina</display-name>
 
     <welcome-file-list>
-        <welcome-file>reg.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 
     <servlet>
