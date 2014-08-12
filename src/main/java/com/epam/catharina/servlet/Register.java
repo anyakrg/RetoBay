@@ -15,11 +15,12 @@ public class Register extends HttpServlet {
         String email = req.getParameter("email");
         String birth = req.getParameter("birth");
         String gender = req.getParameter("gender");
-        //todo ACtionFactory
+        //todo ActionFactory
         req.setAttribute("nickName", nickName);
         req.setAttribute("email", email);
         req.setAttribute("birth", birth);
         req.setAttribute("gender", gender);
+
 
         req.getRequestDispatcher("/WEB-INF/hello.jsp").forward(req, resp);
     }

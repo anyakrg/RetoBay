@@ -90,8 +90,8 @@
         <div class="container">
             <div class="row">
 
-                <h2>Hello! ${nickName} </h2>
-                <h2> Please ckeck inbox at ${email} </h2>
+                <h2>Hello ${nickName}! </h2>
+                <h2> Please check inbox at ${email} </h2>
 
             </div>
         </div>

@@ -75,4 +75,15 @@ public class User {
                 ", birthday=" + birthday +
                 '}';
     }
+
+
+    public enum MyRole {
+        ADMIN, CLIENT
+    };
+
+    public enum Sex {
+        MALE, FEMALE
+    };
+
 }
+
