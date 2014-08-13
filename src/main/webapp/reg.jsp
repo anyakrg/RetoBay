@@ -12,7 +12,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
     <link href="fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">
+    <%--<link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">--%>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+
     <link href="css/lollies.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -137,8 +140,10 @@
 </div>
 
 <!-- SCRIPTS -->
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/bootstrap-3.1.1.min.js"></script>
+<%--<script src="js/jquery-1.7.2.min.js"></script>--%>
+<script src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+<%--<script src="js/bootstrap-3.1.1.min.js"></script>--%>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="plugins/backstretch/backstretch-2.0.4.min.js"></script>
 <script src="plugins/camera-slider/camera-slider-1.3.4.min.js"></script>
 <script src="plugins/camera-slider/easing-1.3.min.js"></script>
@@ -149,7 +154,7 @@
 <script src="plugins/hover-animations/hover-animations-1.0.min.js"></script>
 <script src="plugins/match-height/match-height-0.5.1.min.js"></script>
 <script src="plugins/validation/validation-2.2.min.js"></script>
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<%--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>--%>
 <script src="js/lollies.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
