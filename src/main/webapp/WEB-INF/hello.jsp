@@ -10,14 +10,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
-        <link href="fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">
-        <link href="css/lollies.min.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link href="../css/lollies.min.css" rel="stylesheet">
+        <link href="../css/custom.css" rel="stylesheet">
         <!--[if lt IE 9]>
-        <script src="js/html5shiv-3.7.0.js"></script>
-        <script src="js/respond-1.4.2.js"></script>
+        <script src="../js/html5shiv-3.7.0.js"></script>
+        <script src="../js/respond-1.4.2.js"></script>
         <![endif]-->
     </head>
     <body>
@@ -28,13 +30,12 @@
             <div class="row">
                 <div class="col-md-6 headerMatch">
                     <!-- LOGO -->
-                    <div id="logo"><a href="/"><img src="img/logo.png"/></a></div>
+                    <div id="logo"><a href="/"><img src="../img/logo.png"/></a></div>
                 </div>
                 <div class="col-md-6 headerMatch">
                     <!-- MASTHEAD -->
                     <div id="masthead-container">
                         <div id="masthead">
-
 
                         </div>
                     </div>
@@ -60,11 +61,11 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav nav-justified">
-                                <li class="active"><a href="#">Nav Item 1</a></li>
-                                <li><a href="#">Nav Item 2</a></li>
-                                <li><a href="#">Nav Item 3</a></li>
-                                <li><a href="#">Nav Item 4</a></li>
-                                <li><a href="#">Nav Item 5</a></li>
+                                <li><a href="login">LOGIN</a></li>
+                                <li><a href="register">REGISTER!</a></li>
+                                    <%--<li><a href="#">Nav Item 3</a></li>--%>
+                                    <%--<li><a href="#">Nav Item 4</a></li>--%>
+                                    <%--<li><a href="#">Nav Item 5</a></li>--%>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nav Item 6 <b
                                             class="caret"></b></a>
@@ -115,21 +116,19 @@
     </div>
 
     <!-- SCRIPTS -->
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/bootstrap-3.1.1.min.js"></script>
-    <script src="plugins/backstretch/backstretch-2.0.4.min.js"></script>
-    <script src="plugins/camera-slider/camera-slider-1.3.4.min.js"></script>
-    <script src="plugins/camera-slider/easing-1.3.min.js"></script>
-    <script src="plugins/fancybox/fancybox-1.3.4.pack.js"></script>
-    <script src="plugins/fancybox/klass-1.0.min.js"></script>
-    <script src="plugins/fancybox/photoswipe-3.0.5.min.js"></script>
-    <script src="plugins/hover-animations/transform2d.min.js"></script>
-    <script src="plugins/hover-animations/hover-animations-1.0.min.js"></script>
-    <script src="plugins/match-height/match-height-0.5.1.min.js"></script>
-    <script src="plugins/validation/validation-2.2.min.js"></script>
+    <script src="../plugins/backstretch/backstretch-2.0.4.min.js"></script>
+    <script src="../plugins/camera-slider/camera-slider-1.3.4.min.js"></script>
+    <script src="../plugins/camera-slider/easing-1.3.min.js"></script>
+    <script src="../plugins/fancybox/fancybox-1.3.4.pack.js"></script>
+    <script src="../plugins/fancybox/klass-1.0.min.js"></script>
+    <script src="../plugins/fancybox/photoswipe-3.0.5.min.js"></script>
+    <script src="../plugins/hover-animations/transform2d.min.js"></script>
+    <script src="../plugins/hover-animations/hover-animations-1.0.min.js"></script>
+    <script src="../plugins/match-height/match-height-0.5.1.min.js"></script>
+    <script src="../plugins/validation/validation-2.2.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="js/lollies.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/lollies.min.js"></script>
+    <script src="../js/custom.js"></script>
     </body>
     </html>
 </fmt:bundle>

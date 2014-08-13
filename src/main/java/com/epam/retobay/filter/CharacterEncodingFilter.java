@@ -1,9 +1,9 @@
-package com.epam.retobay.servlet;
+package com.epam.retobay.filter;
 
 import javax.servlet.*;
 import java.io.IOException;
 
-public class HeaderFilter implements Filter {
+public class CharacterEncodingFilter implements Filter {
     public void destroy() {
     }
 

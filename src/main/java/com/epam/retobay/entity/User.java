@@ -1,37 +1,60 @@
 package com.epam.retobay.entity;
 
-import java.util.Date;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.UUID;
 
 public class User {
     private UUID uuid;
-    private String nickname;
-//    private String login;
-//    private String password;
+    private String login;
+    //    private String nickname/real name?;
+    private String password;
     private String email;
-    private MyRole myRole;
+    private Role role;
     private Sex gender;
-    private Date birthday;
 
-    public User(UUID uuid, String nickname, String email, MyRole myRole, Sex gender, Date birthday) {
+    public User(UUID uuid, String login, String password, String email, Role role, Sex gender) {
         this.uuid = uuid;
-        this.nickname = nickname;
+        this.login = login;
+        this.password = password;
         this.email = email;
-        this.myRole = myRole;
+        this.role = role;
         this.gender = gender;
-        this.birthday = birthday;
+    }
+    public User() {
+    }
+
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     public UUID getUuid() {
         return uuid;
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getLogin() {
+        return login;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getEmail() {
@@ -42,14 +65,6 @@ public class User {
         this.email = email;
     }
 
-    public MyRole getMyRole() {
-        return myRole;
-    }
-
-    public void setMyRole(MyRole myRole) {
-        this.myRole = myRole;
-    }
-
     public Sex getGender() {
         return gender;
     }
@@ -58,34 +73,79 @@ public class User {
         this.gender = gender;
     }
 
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
     @Override
     public String toString() {
         return "User{" +
                 "uuid=" + uuid +
-                ", nickname='" + nickname + '\'' +
+                ", login='" + login + '\'' +
                 ", email='" + email + '\'' +
-                ", myRole=" + myRole +
+                ", myRole=" + role +
                 ", gender=" + gender +
-                ", birthday=" + birthday +
+
                 '}';
     }
 
+    public static class Builder {
+        private final static Logger log = LoggerFactory.getLogger(Builder.class);
+        private UUID uuid;
+        private String login;
+        private String password;
+        private String email;
+        private Role role;
+        private Sex gender;
 
-    public enum MyRole {
+        public Builder() {
+        }
+
+        public Builder uuid(UUID uuid) {
+            this.uuid = uuid;
+            return this;
+        }
+
+        public Builder login(String login) {
+            this.login = login;
+            return this;
+        }
+
+        public Builder password(String password) {
+            this.password = password;
+            return this;
+        }
+
+        public Builder email(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public Builder role(String role) {
+            this.role = Role.valueOf(role);
+            return this;
+        }
+
+        public Builder gender(String gender) {
+            this.gender = Sex.valueOf(gender);
+            return this;
+        }
+
+        public User buildUser() {
+
+            User returnedUser = new User(uuid,
+                    login,
+                    password,
+                    email,
+                    role,
+                    gender);
+            log.info("User Created. login={}", login);
+            return returnedUser;
+        }
+    }
+
+    public enum Role {
         ADMIN, CLIENT
-    };
+    }
 
     public enum Sex {
         MALE, FEMALE
-    };
-
+    }
 }
 

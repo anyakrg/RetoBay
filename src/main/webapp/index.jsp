@@ -11,13 +11,10 @@
     <title></title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
     <link href="fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://www.eyecon.ro/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
 
     <link href="css/lollies.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -78,11 +75,11 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav nav-justified">
-                            <li class="active"><a href="#">Nav Item 1</a></li>
-                            <li><a href="reg.jsp">REGISTER!</a></li>
-                            <li><a href="#">Nav Item 3</a></li>
-                            <li><a href="#">Nav Item 4</a></li>
-                            <li><a href="#">Nav Item 5</a></li>
+                            <li><a href="LoginPage.jsp">LOGIN</a></li>
+                            <li><a href="RegistrationPage.jsp">REGISTER!</a></li>
+                            <%--<li><a href="#">Nav Item 3</a></li>--%>
+                            <%--<li><a href="#">Nav Item 4</a></li>--%>
+                            <%--<li><a href="#">Nav Item 5</a></li>--%>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nav Item 6 <b
                                         class="caret"></b></a>

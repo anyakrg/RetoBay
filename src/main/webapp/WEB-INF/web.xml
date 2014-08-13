@@ -13,7 +13,17 @@
 
     <servlet>
         <servlet-name>Register</servlet-name>
-        <servlet-class>com.epam.retobay.servlet.Register</servlet-class>
+        <servlet-class>com.epam.retobay.servlet.Controller</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.epam.retobay.servlet.Login</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -22,13 +32,14 @@
     </servlet-mapping>
 
 
+
     <filter>
-        <filter-name>HeadFilter</filter-name>
-        <filter-class>com.epam.retobay.servlet.HeaderFilter</filter-class>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>com.epam.retobay.filter.CharacterEncodingFilter</filter-class>
     </filter>
 
     <filter-mapping>
-        <filter-name>HeadFilter</filter-name>
+        <filter-name>CharacterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 

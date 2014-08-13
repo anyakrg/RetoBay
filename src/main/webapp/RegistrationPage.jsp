@@ -12,17 +12,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
     <link href="fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <%--<link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">--%>
-    
+
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//www.eyecon.ro/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
 
     <link href="css/lollies.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <!--[if lt IE 9]>
-    <script src="js/html5shiv-3.7.0.js"></script>
-    <script src="js/respond-1.4.2.js"></script>
+    <script src="/js/html5shiv-3.7.0.js"></script>
+    <script src="/js/respond-1.4.2.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -73,11 +73,11 @@
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav nav-justified">
-                            <li class="active"><a href="#">Nav Item 1</a></li>
-                            <li><a href="#">Nav Item 2</a></li>
-                            <li><a href="#">Nav Item 3</a></li>
-                            <li><a href="#">Nav Item 4</a></li>
-                            <li><a href="#">Nav Item 5</a></li>
+                            <li><a href="login">LOGIN</a></li>
+                            <li class="active"><a href="register">REGISTER!</a></li>
+                                <%--<li><a href="#">Nav Item 3</a></li>--%>
+                                <%--<li><a href="#">Nav Item 4</a></li>--%>
+                                <%--<li><a href="#">Nav Item 5</a></li>--%>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nav Item 6 <b
                                         class="caret"></b></a>
@@ -102,27 +102,13 @@
 <div class="content-block">
     <div class="container">
         <div class="row">
-
-
-                    <div class='col-sm-6'>
-                        <input type='text' class="form-control" id='datetimepicker6'/>
-                    </div>
-                    <script type="text/javascript">
-                        $(function () {
-                            $('#datetimepicker6').datetimepicker();
-                        });
-                    </script>
-
-
-
-
+            <div class="col-md-3 col-md-offset-5">
             <form action="${pageContext.request.contextPath}/register" method="post">
                 <h2 class="form-signin-heading">Hello! New User :) </h2>
-                <input type="nickName" name="nickName" class="form-control" placeholder="NickName" required autofocus>
-                <input type="email" name="email" class="form-control" placeholder="Email address" required>
-                <input type="birth" name="birth" class="form-control" placeholder="Date of Birth yyyy-[m]m-[d]d" required>
-
-
+                <input type="login" name="login" class="form-control" placeholder="${login}" required autofocus>
+                <input type="email" name="email" class="form-control" placeholder="${email}" required>
+                <input type="password" name="password" class="form-control" placeholder="password" required>
+                <input type="repassword" name="repassword" class="form-control" placeholder="Confirm Password" required>
                 <div class="radio" >
                     <label>
                         <input type="radio" name="gender" value="M" required > Male
@@ -131,8 +117,12 @@
                         <input type="radio" name="gender" value="F" required > Female
                     </label>
                 </div>
+                <input type="hidden" name="action" value="register">
+                <input type="checkbox" name="legal" value="legal" id="page" required> I'm 18 years old and agree with the Terms of Use and Privacy Policy.
+                <p></p>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Complete Registration!</button>
             </form>
+            </div>
         </div>
     </div>
 </div>
