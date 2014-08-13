@@ -13,7 +13,7 @@
 
     <servlet>
         <servlet-name>Register</servlet-name>
-        <servlet-class>com.epam.catharina.servlet.Register</servlet-class>
+        <servlet-class>com.epam.retobay.servlet.Register</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -25,7 +25,7 @@
 
     <filter>
         <filter-name>HeadFilter</filter-name>
-        <filter-class>com.epam.catharina.servlet.HeaderFilter</filter-class>
+        <filter-class>com.epam.retobay.servlet.HeaderFilter</filter-class>
     </filter>
 
     <filter-mapping>

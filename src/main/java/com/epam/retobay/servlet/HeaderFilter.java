@@ -1,4 +1,4 @@
-package com.epam.catharina.servlet;
+package com.epam.retobay.servlet;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;

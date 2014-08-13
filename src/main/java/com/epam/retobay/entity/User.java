@@ -1,4 +1,4 @@
-package com.epam.catharina.entity;
+package com.epam.retobay.entity;
 
 import java.util.Date;
 import java.util.UUID;

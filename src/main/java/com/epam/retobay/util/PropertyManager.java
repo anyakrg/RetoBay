@@ -1,4 +1,4 @@
-package com.epam.catharina.util;
+package com.epam.retobay.util;
 
 import java.io.IOException;
 import java.io.InputStream;

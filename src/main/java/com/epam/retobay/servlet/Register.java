@@ -1,6 +1,6 @@
-package com.epam.catharina.servlet;
+package com.epam.retobay.servlet;
 
-import com.epam.catharina.entity.User;
+import com.epam.retobay.entity.User;
 
 import javax.mail.Transport;
 import javax.mail.internet.AddressException;

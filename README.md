@@ -1,36 +1,33 @@
-TASK 5
-=======
+
+Image editing service
+======================
 <epam> Java Web Development
 ---------------------------
 
-no project - no readme :)
+**Clients:** place order (load photo and choose type of editing(task) - retouch/change background/colorize/photomontage etc...)
 
-Сервис ФотоРетуши.
-============================
-**Клиенты:** размещают заказ(с загрузкой фотографии и типом работы - обработать/заменить фон/восстановить/покрасить etc...)
+	Profile contains order history, comments, marks for all-time orders completed.
+
+**PhotoMasters:** choose appropriate orders from auction or take personal orders. Complete order's miniatures store in profile.
 	
-	Портфолио содержит историю заказов с комментариями от мастеров, историю оценок, историю отзывов о работах.
+	Profile contains successful/fail orders count, average rating(time, skills, communicativeness), 
+	complete orders' miniatures, client's reviews. Own skills.
 
-**ФотоМастера:** выбирают интересующие заказы из аукциона либо принимают персональные заказы, после выполнения заказа миниатюра работы размещается в портфолио, отправляет заказчику
-	
-	Портфолио содержит количество успешных/неуспешных работ, средний рейтинг (скорость, профессиональность,коммуникативность), историю работ(миниатюры), отзывы клиентов с оценками, краткое резюме(какой вид услуг предлагает)
+**Moderators:** Considers complaints to resolve disputs. 
 
-**Модераторы:** Рассматривает жалобы, Решает спорные моменты.
+**Administrator:** Full control over the system, bans bad guys to "black list".
 
-**Администратор:** может занести вредных клиентов и фотомастеров в "черный список".
+Auction - orders waits until they're been confirmed by PhotoMaster. TimeOut - 3 days.
 
-Аукцион - свободные заказы "висят" пока их не заберут. (таймаут n дней)
+Prsonal Orders to PhotoMaster - accepts/rejects by masters.
 
-Персональные заказы - принимаются/отклоняются мастерами.
-
-
-*   Главная
-*   Регистрация
-*   Личный кабинет мастера
-*   Личный кабинет клиента
-*   Личный кабинет Администратора
-*   Аукцион
-*   Рейтинг Мастеров
-*   Профиль мастера
-*   Профиль клиента
-
+*   Main
+*   Register Page
+*   PhotoMaster's Account page
+*   Client's Account page
+*   Administrator's Account page
+*   Moderator's Account page
+*   Auction
+*   PhotoMaster's rating page
+*   PhotoMaster's profile
+*   Client Profile

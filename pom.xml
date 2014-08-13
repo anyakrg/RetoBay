@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.epam.catharina</groupId>
-    <artifactId>Catharina</artifactId>
+    <groupId>com.epam.retobay</groupId>
+    <artifactId>RetoBay</artifactId>
     <version>0.1-DUMMY</version>
     <packaging>war</packaging>
 
@@ -17,10 +17,12 @@
         <maven.complier.target>1.8</maven.complier.target>
         <slf4j.version>1.7.7</slf4j.version>
         <jstl.version>1.2</jstl.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
     <build>
-        <finalName>Catharina</finalName>
+        <finalName>RetoBay</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -75,11 +77,10 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>mail</artifactId>
-            <version>1.4.7</version>
+            <groupId>org.codemonkey.simplejavamail</groupId>
+            <artifactId>simple-java-mail</artifactId>
+            <version>2.1</version>
         </dependency>
-
 
     </dependencies>
 

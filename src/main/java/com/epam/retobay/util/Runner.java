@@ -1,10 +1,10 @@
-package com.epam.catharina.util;
+package com.epam.retobay.util;
 
-import com.epam.catharina.entity.User;
+import com.epam.retobay.entity.User;
 import java.sql.Date;
 import java.util.UUID;
 
-import static com.epam.catharina.entity.User.*;
+import static com.epam.retobay.entity.User.*;
 
 public class Runner {
     public static void main(String[] args) {
