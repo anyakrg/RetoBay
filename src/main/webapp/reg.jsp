@@ -11,10 +11,12 @@
     <title></title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
     <link href="fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
     <%--<link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">--%>
+    
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//www.eyecon.ro/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
     <link href="css/lollies.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
@@ -47,8 +49,6 @@
                         -->
                         <!-- CALL TO ACTION -->
                         <!--<div class="call"><h1>Lorem ipsum 1800123123</h1><p>Consectetur adipiscing elit</p></div>-->
-
-
                     </div>
                 </div>
             </div>
@@ -102,12 +102,27 @@
 <div class="content-block">
     <div class="container">
         <div class="row">
-            <!--<form class="form-signin" role="form">-->
+
+
+                    <div class='col-sm-6'>
+                        <input type='text' class="form-control" id='datetimepicker6'/>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker6').datetimepicker();
+                        });
+                    </script>
+
+
+
+
             <form action="${pageContext.request.contextPath}/register" method="post">
                 <h2 class="form-signin-heading">Hello! New User :) </h2>
                 <input type="nickName" name="nickName" class="form-control" placeholder="NickName" required autofocus>
                 <input type="email" name="email" class="form-control" placeholder="Email address" required>
                 <input type="birth" name="birth" class="form-control" placeholder="Date of Birth yyyy-[m]m-[d]d" required>
+
+
                 <div class="radio" >
                     <label>
                         <input type="radio" name="gender" value="M" required > Male
@@ -123,7 +138,8 @@
 </div>
 
 
-<div class="footer-block">42
+<div class="footer-block">
+
 </div>
 
 <div class="copyright-block">
@@ -141,9 +157,9 @@
 
 <!-- SCRIPTS -->
 <%--<script src="js/jquery-1.7.2.min.js"></script>--%>
-<script src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+
 <%--<script src="js/bootstrap-3.1.1.min.js"></script>--%>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 <script src="plugins/backstretch/backstretch-2.0.4.min.js"></script>
 <script src="plugins/camera-slider/camera-slider-1.3.4.min.js"></script>
 <script src="plugins/camera-slider/easing-1.3.min.js"></script>

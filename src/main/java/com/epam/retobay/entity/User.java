@@ -6,6 +6,8 @@ import java.util.UUID;
 public class User {
     private UUID uuid;
     private String nickname;
+//    private String login;
+//    private String password;
     private String email;
     private MyRole myRole;
     private Sex gender;

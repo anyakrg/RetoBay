@@ -80,7 +80,9 @@
             <groupId>org.codemonkey.simplejavamail</groupId>
             <artifactId>simple-java-mail</artifactId>
             <version>2.1</version>
+
         </dependency>
+
 
     </dependencies>
 
