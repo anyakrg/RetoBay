@@ -26,13 +26,13 @@ public class RegistrationAction implements Action {
         // db check
         // write to db
 
-        if (!success) {
-           request.setAttribute("login", login);
-           request.setAttribute("email", email);
-           //request.setAttribute("error", error type);
-           return "/RegistrationPage.jsp";
-        }
-
+       // if (!success) {
+       //    request.setAttribute("login", login);
+       //    request.setAttribute("email", email);
+       //    //request.setAttribute("error", error type);
+       //    return "/RegistrationPage.jsp";
+       // }
+//
         request.setAttribute("user", u);
         return "/WEB-INF/hello.jsp";
     }
